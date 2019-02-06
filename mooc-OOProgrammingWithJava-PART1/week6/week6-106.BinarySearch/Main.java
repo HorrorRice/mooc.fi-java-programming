@@ -13,11 +13,15 @@ public class Main {
         System.out.println();
 
         System.out.print("Enter searched number: ");
-        String etsittavaLuku = reader.nextLine();
+        String searchedValue = reader.nextLine();
         System.out.println();
 
-        boolean result = BinarySearch.search(array, Integer.parseInt(etsittavaLuku));
+        boolean result = BinarySearch.search(array, Integer.parseInt(searchedValue));
 
-        System.out.println(result);
+        if (result) {
+            System.out.println("Number " + searchedValue + " is in the array.");
+        } else {
+            System.out.println("Number " + searchedValue + " is not in the array.");
+        }
     }
 }
