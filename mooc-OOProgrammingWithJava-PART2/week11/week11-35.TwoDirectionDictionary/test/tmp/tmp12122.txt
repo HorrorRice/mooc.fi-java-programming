@@ -1,0 +1,1 @@
+tietokone[Ljava.lang.String;@1fedcc9computer
